@@ -1,0 +1,115 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #667d8e;
+        }
+        .product{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 12px;
+            gap: 20px;
+            cursor: pointer;
+            color: white;
+        }
+        h1{
+            margin-left: 100px;
+            letter-spacing: 10px;
+            margin-left: 12px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        ul li{
+            border: 2px solid black;
+            font-size: 2rem;
+        }
+        ul li:hover{
+            background-color:green;
+        }
+        .images{
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 10px;
+            display: flex;
+            justify-content :space-between;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .images img{
+            
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Filter Images</h1>
+            <ul class="product">
+                <li>All Menu</li>
+                <li>Watches</li>
+                <li>Mobiles</li> 
+               <li>Choclates</li> 
+            </ul>
+
+            <div class="images">
+   <img src="mobile1.png" data-filter="mobiles" alt="">
+   <img src="mobile2.png" data-filter="mobiles" alt="">
+   <img src="mobile3.jpg"data-filter="mobiles" alt="">
+   <img src="watch1.png"data-filter="watches" alt="">
+   <img src="watch2.jpg"data-filter="watches" alt="">
+
+   <img src="watch3.png"data-filter="watches" alt="">
+
+   <img src="watch4.png"data-filter="watches" alt="">
+   <img src="c1.jpeg"data-filter="choclates" alt="">
+   <img src="c2.jpg" data-filter="choclates"alt="">
+
+   <img src="c3.jpg"data-filter="choclates" alt="">             
+            </div>
+    </section>
+    
+    <script src="Filter.js"></script>
+</body>
+</html> 
+<!-- // var liItem = document.querySelectorAll('ul li')
+
+
+// var imgItems = document.querySelectorAll('.images img')
+
+
+
+// liItem.forEach(li => {
+//     li.onclick = function () {
+//         liItem.forEach(li => {
+//             li.className = "";
+//         })
+
+//         li.className = "active"
+//     }
+
+//        const value = li.textContent;
+    
+
+//     imgItems.forEach(img => {
+      
+//         img.style.display = 'none';
+//         if (img.getAttribute('data-filter') == value.toLowerCase() || value == 'All Menu') {
+//             img.style.display = 'block';
+//         }
+//     })
+
+
+// }) -->
